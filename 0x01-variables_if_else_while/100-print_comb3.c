@@ -6,7 +6,7 @@
  */
 
 int main(void)
-	
+
 {
 
 	int c = 0;
@@ -16,46 +16,39 @@ int main(void)
 	int l_d;
 
 
+		while (c <= 99)
 
-	while (c <= 99)
+{
+	f_d = (c / 10 + '0');
+	
+	l_d = (c % 10 + '0');
 
-	{
-	
-			f_d = (c / 10 + '0');
-	
-			l_d = (c % 10 + '0');
-	
-	
-	
-			if (f_d < l_d)
-	
-			{
-			
-						putchar(f_d);
-			
-						putchar(l_d);
-			
-			
-			
-						if (c != 89)
-			
-						{
-						
-									putchar(',') 						
-									putchar(' ');
-						
-									}
-			
-					}
-	
-			c++;
-	
-		}
+		if (f_d < l_d)								
+{
+	putchar(f_d);
 
-			putchar('\n');
+	putchar(l_d);
 
-			return (0);
+
+	
+		if (c != 89)
+
+
+{
+	putchar(",");
+
+	putchar('');
 
 }
+																					
 }
+	c++;
 
+										
+}
+	
+	putchar('\n');
+
+	return (0);
+
+}

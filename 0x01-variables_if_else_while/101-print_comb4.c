@@ -13,7 +13,6 @@ int main(void)
 		{
 			for (b = 0; b <= 9; b++)
 			{
-				
 				for  (c = 0; c <= 9; c++)
 				{
 					
@@ -24,7 +23,7 @@ int main(void)
 						putchar(c + '0');
 
 						if (a != 7)
-						{
+				{
 							putchar(',');
 							putchar(' ');
 
@@ -32,7 +31,7 @@ int main(void)
 						}
 					}
 			}
-	}	
+	}
 		putchar('\n');
 		return (0);
 }

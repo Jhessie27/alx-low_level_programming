@@ -1,4 +1,4 @@
-#include <stdio.h>
+include <stdio.h>
 /**
  * main - Entry point
  * Description: A program that prints all possible combinations
@@ -15,33 +15,25 @@ int main(void)
 				{
 					if (a < b)
 					{
-						
-						putchar(a + '0');
-						
+						putchar(a + '0');	
 						putchar(b + '0');
 
-						if (a != 8 || (a == 8 && b != 9))
-						{
-
-							
-							putchar(',');
-							
+					if (a != 8 || (a == 8 && b != 9))
+					{
+		
+							putchar(',');	
 							putchar(' ');
 
 						}
-
 				}
-
 		}
-
 	}
 
 	putchar('\n');
-	
 	return (0);
 
-
 }
+
 
 
 

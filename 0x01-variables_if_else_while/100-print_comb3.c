@@ -1,38 +1,61 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Description: A program that prints all possible combinations
- * of a two digit number.
+ * main - program that prints all possible different combinations of 2 digits
  * Return: 0
  */
 
 int main(void)
+	
 {
-		int a, b;
 
-		for (a = 0; a <= 9; a++)
-		{
-			for (b = 0; b <= 9; b++)
+	int c = 0;
+
+	int f_d;
+
+	int l_d;
+
+
+
+	while (c <= 99)
+
+	{
+	
+			f_d = (c / 10 + '0');
+	
+			l_d = (c % 10 + '0');
+	
+	
+	
+			if (f_d < l_d)
+	
 			{
-															if (a < b)
-
-				{
-
-																putchar(a + '0');
-																putchar(b + '0');
-																if (a != 8 || (a == 8 && b != 9))
-				
-					{
-																	putchar(',');
-																	putchar(' ');
-																											}
-															}
-														}
-
+			
+						putchar(f_d);
+			
+						putchar(l_d);
+			
+			
+			
+						if (c != 89)
+			
+						{
+						
+									putchar(',') 						
+									putchar(' ');
+						
+									}
+			
+					}
+	
+			c++;
+	
 		}
 
-		putchar('\n');
-		return (0);
+			putchar('\n');
 
+			return (0);
+
+}
 }
 

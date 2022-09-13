@@ -16,17 +16,17 @@ int main(void)
 					if (a < b)
 					{
 						
-						putchar(a + '0')
+						putchar(a + '0');
 						
-						putchar(b + '0')
+						putchar(b + '0');
 
 						if (a != 8 || (a == 8 && b != 9))
 						{
 
 							
-							putchar(',')
+							putchar(',');
 							
-							putchar(' ')
+							putchar(' ');
 
 						}
 
@@ -38,7 +38,8 @@ int main(void)
 
 	putchar('\n');
 	
-	return (0)
+	return (0);
+
 
 }
 

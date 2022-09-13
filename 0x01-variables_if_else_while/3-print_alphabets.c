@@ -8,27 +8,30 @@
  */
 
 int main(void)
+	
+{
+
+char ch;
+
+for (ch = 'a' ; ch <= 'z' ; ch++)
 
 {
 
-	char ch;
+putchar(ch);
 
-	for (ch = 'a' ; ch <= 'z' ; ch++)
+}
 
-	{
+for (ch = 'A' ; ch <= 'Z' ; ch++)
 
-		if (ch != 'e' && ch != 'q')
+{
 
-		{
+putchar(ch);
 
-			putchar(ch);
+}
 
-		}
+putchar('\n');
 
-	}
+return (0);
 
-	putchar('\n');
-
-	return (0);
 }
 

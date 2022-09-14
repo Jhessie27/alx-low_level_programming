@@ -8,7 +8,7 @@
  * On error, -1 is printed and error is set appropriately
  */
 
-int _putchar(int char)
+int _putchar(int c)
 {
 	return (0);
 }

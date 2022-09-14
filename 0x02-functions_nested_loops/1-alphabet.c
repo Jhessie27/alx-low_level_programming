@@ -1,6 +1,6 @@
 include "main.h"
-/** main - prints alphabet in lower case
- * 
+/** print_alphabet  - prints alphabet in lower case
+ *  followed by a new line
  * Return: 0
  */
 void print_alphabet(void)
@@ -14,7 +14,8 @@ void print_alphabet(void)
 
 	}
 	putchar("/n");
-	return(0)
+
 
 }
+
 

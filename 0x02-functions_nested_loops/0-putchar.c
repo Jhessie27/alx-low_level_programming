@@ -6,9 +6,8 @@
  */
 
 int main(void)
-{
-// This is a single line comment
 
+{
 		_putchar('_');
 	        _putchar('p');
 		_putchar('u');

@@ -5,12 +5,12 @@ include "main.h"
  */
 void print_alphabet(void)
 {
-	char c;
-
-	for ( c = 'a' ; c <= 'z' ; c++)
+	char ch;
+	
+	for (ch = 'a' ; ch <= 'z' ; ch++)
 	
 	{
-		putchar(c);
+		putchar(ch);
 
 	}
 	putchar("/n");

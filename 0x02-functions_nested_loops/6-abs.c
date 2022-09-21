@@ -11,9 +11,11 @@ int _abs(int n)
 	{
 		return (n);
 	}
-	if (n == -n;)
+	if (n == -n)
 	{
 		return (n);
 	}
 }
+
+
 

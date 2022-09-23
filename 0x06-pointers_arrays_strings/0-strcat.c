@@ -5,7 +5,7 @@
  * @dest: copy to
  * @src: copy from
  *
- * Returns void
+ * Return: void
  */
 char *_strcat(char *dest, char *src)
 {

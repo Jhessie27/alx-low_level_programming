@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * evaluate_num - recursion loop
  * @num: num

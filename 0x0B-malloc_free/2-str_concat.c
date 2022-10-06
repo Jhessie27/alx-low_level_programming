@@ -1,63 +1,51 @@
 #include <stdlib.h>
 
 /**
- *_strlen - count arrray
- *@s: array of elements
- *Return: i
- */
-
-int _strlen(char *s)
-{
-	unsigned int i;
-
-	i = 0;
-	while (s[i] != '\0') /*Count character of string*/
-	{
-		i++;
-	}
-
-	return (i);
-}
-
-/**
- *str_concat - back a pointer to array
- *@s1: Array one
- *@s2: Array two
- *Return: Always an array dinamic
+ * str_concat - Concatenate two strings
+ *
+ * @s1: A string to be concatenated
+ *
+ * @s2: A string to be concatenated
+ *
+ * Return: Pointer to newly allocated memory
+ * which is equal to @s1 + @s2 (SUCCESS) OR
+ * NULL (FAILURE)
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	char *dst;
-	unsigned int i, j, size;
+	unsigned int s1_length = 0;
+	unsigned int s2_length = 0;
+	char *alloc_mem;
+	unsigned int i, j;
 
-	/*If the array is empty*/
 	if (s1 == NULL)
 		s1 = "";
 
 	if (s2 == NULL)
-		s1 = "";
+		s2 = "";
 
-	/*count size total*/
-	size = (_strlen(s1) + _strlen(s2) + 1);
+	while (*(s1 + s1_length) != '\0')
+		s1_length++;
 
-	/*malloc*/
-	dst = (char *) malloc(size * sizeof(char));
+	while (*(s2 + s2_length) != '\0')
+		s2_length++;
 
-	if (dst == 0)
-	{
-		return (NULL);
-	}
+	alloc_mem = malloc(1 + (s1_length * sizeof(*s1)) + (s2_length * sizeof(*s2)));
+	if (alloc_mem == NULL)
 
-	/*Concatenate arrays*/
-	for (i = 0; *(s1 + i) != '\0'; i++)
-		*(dst + i) = *(s1 + i);
+		return ('\0');
 
-	for (j = 0; *(s2 + j) != '\0'; j++)
-	{
-		*(dst + i) = *(s2 + j);
-		i++;
-	}
-	return (dst);
+
+	for (i = 0; i < s1_length; i++)
+
+		alloc_mem[i] = *(s1 + i);
+
+	for (j = 0; j < s2_length; j++, i++)
+
+		alloc_mem[i] = *(s2 + j);
+
+
+	return (alloc_mem);
 }
 

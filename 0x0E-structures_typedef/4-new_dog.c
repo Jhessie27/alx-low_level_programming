@@ -65,6 +65,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 int _strLen(char *str)
 {
 	int i = 0;
+
 	while (str[i])
 		i++;
 
